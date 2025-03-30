@@ -74,11 +74,7 @@ SQL Query Editor provides a modern, fast, and intuitive interface for data analy
 
 ### Load Time Breakdown
 
-![Performance Metrics](assets/performance-metrics.png)
-
-### Memory Usage
-
-![Memory Usage](assets/memory-usage.png)
+![Performance Metrics](assets/load-time.png)
 
 ## 🏃‍♂️ Getting Started
 
