@@ -27,7 +27,7 @@ export function Navbar() {
           letterSpacing="tight"
           ml={{ base: 4, md: 0 }}
         >
-          SQL Code Editor
+          Query Karta - SQL Editor
         </Heading>
 
         <Link

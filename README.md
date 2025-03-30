@@ -1,14 +1,14 @@
-# [Query Karta](https://storied-cactus-b7fb82.netlify.app/)
+# 🚀 Query Karta - Modern SQL Query Editor
 
 ![Landing Page](assets/landing.png)
 
 > A high-performance SQL query editor built with React and TypeScript, featuring real-time query execution and result visualization.
 
-## Solution
+## 💡 Overview
 
 SQL Query Editor provides a modern, fast, and intuitive interface for data analysts to write, execute, and visualize SQL queries. Built with performance in mind, it offers features like syntax highlighting, intelligent autocompletion, and efficient rendering of large datasets, making it an ideal tool for data exploration and analysis.
 
-## Features
+## ✨ Key Features
 
 - Professional Code Editor with Monaco
 - Intelligent SQL Autocompletion
@@ -16,11 +16,35 @@ SQL Query Editor provides a modern, fast, and intuitive interface for data analy
 - High-Performance Data Grid
 - Keyboard Shortcuts
 - Clean, Modern UI
+- Search Functionality
 - Responsive Design
 - Query History
 - Export Functionality
 
-## Flow Diagrams
+## 📊 Query Templates Library
+
+Our query editor comes with a rich set of pre-built templates:
+
+### 🛍️ Product Analytics
+- View all products in catalog
+- Products categorized view
+- Top 10 most expensive products
+
+### 👥 Customer Intelligence
+- Complete customer listing
+- Customer distribution by country
+- Top 10 customers by sales volume
+
+### 📦 Order Management
+- Complete order history
+- Orders per employee analysis
+- Latest 20 orders tracking
+
+### 👨‍💼 Employee Dashboard
+- Employee directory
+- Territory-wise employee distribution
+
+## 🔄 System Architecture
 
 ### Frontend Flow
 
@@ -105,33 +129,78 @@ Visit `http://localhost:5173` to see the application.
 3. View results in the data grid below
 4. Export results as CSV if needed
 
-### Keyboard Shortcuts
+## ⌨️ Keyboard Shortcuts
 
 | Shortcut | Action |
 |----------|--------|
-| Ctrl + Enter | Execute Query |
-| Ctrl + S | Save Query |
-| Ctrl + / | Toggle Comment |
-| Ctrl + Space | Trigger Autocomplete |
+| Ctrl + Enter | ▶️ Execute Query |
+| Ctrl + S | 💾 Save Query |
+| Ctrl + / | 💬 Toggle Comment |
+| Ctrl + Space | ✨ Trigger Autocomplete |
 
 ## 📝 Demo Queries
 
-The application comes with several pre-loaded queries:
+Try these sample queries to explore different aspects of the database:
 
+### 🛍️ Products Queries
 ```sql
--- Sample Query 1
-SELECT * FROM employees WHERE department = 'Sales' LIMIT 1000;
+-- View all products
+SELECT * FROM products;
 
--- Sample Query 2
-SELECT department, COUNT(*) as count 
-FROM employees 
-GROUP BY department 
-ORDER BY count DESC;
+-- Products with categories
+SELECT p.ProductName, c.CategoryName
+FROM products p
+JOIN categories c ON p.CategoryID = c.CategoryID;
+
+-- Top expensive products
+SELECT ProductName, UnitPrice
+FROM products
+ORDER BY UnitPrice DESC
+LIMIT 10;
 ```
 
-## 🔧 Configuration
+### 👥 Customer Analysis
+```sql
+-- Customer distribution by country
+SELECT Country, COUNT(*) as CustomerCount
+FROM customers
+GROUP BY Country
+ORDER BY CustomerCount DESC;
 
-Environment variables can be configured in `.env`:
+-- Top performing customers
+SELECT 
+  c.CustomerID, 
+  c.CompanyName, 
+  SUM(od.Quantity * od.UnitPrice) as TotalPurchases
+FROM customers c
+JOIN orders o ON c.CustomerID = o.CustomerID
+JOIN order_details od ON o.OrderID = od.OrderID
+GROUP BY c.CustomerID
+ORDER BY TotalPurchases DESC
+LIMIT 10;
+```
+
+### 📦 Order Insights
+```sql
+-- Recent orders tracking
+SELECT * FROM orders
+ORDER BY OrderDate DESC
+LIMIT 20;
+
+-- Employee order performance
+SELECT 
+  e.FirstName, 
+  e.LastName, 
+  COUNT(o.OrderID) as OrderCount
+FROM employees e
+JOIN orders o ON e.EmployeeID = o.EmployeeID
+GROUP BY e.EmployeeID
+ORDER BY OrderCount DESC;
+```
+
+## ⚙️ Configuration
+
+Configure your environment variables in `.env`:
 
 ```env
 VITE_API_ENDPOINT=your_api_endpoint
@@ -162,4 +231,3 @@ Project Link: [https://github.com/SakshamTolani/query-karta](https://github.com/
 ---
 
 Built with ❤️ for Atlan Frontend Internship 2025
-````
