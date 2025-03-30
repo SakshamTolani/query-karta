@@ -46,10 +46,13 @@ SQL Query Editor provides a modern, fast, and intuitive interface for data analy
 
 ## 📊 Performance Metrics
 
+![Performance Metrics](assets/performance-metrics.png)
+
 ### Page Load Time
-- Initial Load: ~1.2s
+- Initial Load: ~0.9s
 - Subsequent Loads: ~0.8s (leveraging browser caching)
-- First Contentful Paint (FCP): ~0.9s
+- First Contentful Paint (FCP): ~0.5s
+- Largest Contentful Paint (LCP): ~1.52s
 
 ### Performance Optimizations
 1. **Code Splitting**
