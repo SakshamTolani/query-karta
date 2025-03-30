@@ -68,23 +68,23 @@ Our query editor comes with a rich set of pre-built templates:
 - **State Management**: Zustand
 - **Routing**: React Router DOM
 
-## 📊 Performance Metrics
+## ✅ Pros and Cons of Proposed Solution
 
-![Performance Metrics](assets/performance-metrics.png)
-
-
-### ✅ Pros and Cons of Proposed Solution
-
-#### Pros
+### Pros
 - Streamlined and user-friendly interface
 - Clean architecture with a fallback mechanism
 - Clear separation of concerns between data and UI layers
 - Full TypeScript integration reduces runtime errors
 
-#### Cons
+### Cons
 - Monolithic structure; could benefit from microservices along with backend
 - Large datasets handling requires virtual scrolling
 - Potential for improvements with caching and additional fallback mechanisms
+
+
+## 📊 Performance Metrics
+
+![Performance Metrics](assets/performance-metrics.png)
 
 ### Page Load Time
 - Initial Load: ~0.9s
