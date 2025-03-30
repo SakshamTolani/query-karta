@@ -24,19 +24,16 @@ SQL Query Editor provides a modern, fast, and intuitive interface for data analy
 
 ### Frontend Flow
 
-![Frontend Flow Diagram](assets/frontend-flow.png)
+![Frontend Flow Diagram](assets/flowchart.png)
 
 ### Component Architecture
 
-![Component Architecture](assets/component-architecture.png)
+![Component Architecture](assets/architecture.png)
 
 ## System Design
 
 ![System Design](assets/system-design.png)
 
-## Data Flow
-
-![Data Flow Diagram](assets/data-flow.png)
 
 ## 🛠️ Technical Stack
 
@@ -90,7 +87,7 @@ SQL Query Editor provides a modern, fast, and intuitive interface for data analy
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/sql-editor.git
+git clone https://github.com/SakshamTolani/query-karta
 
 # Install dependencies
 cd sql-editor
@@ -140,6 +137,7 @@ Environment variables can be configured in `.env`:
 ```env
 VITE_API_ENDPOINT=your_api_endpoint
 VITE_MAX_ROWS=10000
+VITE_COMPRESSION_ENABLED=true
 ```
 
 ## 🌟 Future Enhancements
