@@ -1,4 +1,4 @@
-# [SQL Query Editor](https://sql-editor-demo.vercel.app)
+# [Query Karta](https://storied-cactus-b7fb82.netlify.app/)
 
 ![Landing Page](assets/landing.png)
 
@@ -149,9 +149,9 @@ VITE_COMPRESSION_ENABLED=true
 
 ## 📫 Contact
 
-Your Name - [@twitter_handle](https://twitter.com/your_handle)
+Saksham Tolani Name - [@linkedin](https://linkedin.com/in/saksham-tolani)
 
-Project Link: [https://github.com/yourusername/sql-editor](https://github.com/yourusername/sql-editor)
+Project Link: [https://github.com/SakshamTolani/query-karta](https://github.com/SakshamTolani/query-karta)
 
 ## 🙏 Acknowledgments
 
