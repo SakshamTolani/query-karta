@@ -54,9 +54,9 @@ Our query editor comes with a rich set of pre-built templates:
 
 ![Component Architecture](assets/architecture.png)
 
-## System Design
+## ER Diagram
 
-![System Design](assets/system-design.png)
+![System Design](assets/erd.png)
 
 
 ## 🛠️ Technical Stack
@@ -127,7 +127,7 @@ Our query editor comes with a rich set of pre-built templates:
 git clone https://github.com/SakshamTolani/query-karta
 
 # Install dependencies
-cd sql-editor
+cd query-karta
 npm install
 
 # Start development server
