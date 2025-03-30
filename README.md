@@ -72,6 +72,20 @@ Our query editor comes with a rich set of pre-built templates:
 
 ![Performance Metrics](assets/performance-metrics.png)
 
+
+### ✅ Pros and Cons of Proposed Solution
+
+#### Pros
+- Streamlined and user-friendly interface
+- Clean architecture with a fallback mechanism
+- Clear separation of concerns between data and UI layers
+- Full TypeScript integration reduces runtime errors
+
+#### Cons
+- Monolithic structure; could benefit from microservices along with backend
+- Large datasets handling requires virtual scrolling
+- Potential for improvements with caching and additional fallback mechanisms
+
 ### Page Load Time
 - Initial Load: ~0.9s
 - Subsequent Loads: ~0.8s (leveraging browser caching)
@@ -227,6 +241,13 @@ Project Link: [https://github.com/SakshamTolani/query-karta](https://github.com/
 - [Monaco Editor](https://microsoft.github.io/monaco-editor/)
 - [Chakra UI](https://chakra-ui.com/)
 - [Atlan Team](https://atlan.com/) for the opportunity
+
+
+## 🌍Contact
+
+For any inquiries or support, please email us at sakshamtolani@gmail.com or open an issue in this repository.
+
+Happy querying with Query Karta! 🏨
 
 ---
 
