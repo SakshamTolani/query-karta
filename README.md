@@ -64,16 +64,15 @@ Our query editor comes with a rich set of pre-built templates:
 Here’s your list formatted for the README:
 
 ## ⚙️ NPM Modules Used
-
-- `"@chakra-ui/icons": "^2.1.1"` - Provides a set of accessible and customizable icons for Chakra UI components.  
+  
 - `"@chakra-ui/react": "^2.10.7"` - A modular and accessible UI library to build modern web applications.  
-- `"@emotion/styled": "^11.11.0"` - A library for writing CSS-in-JS styles with a styled-components-like syntax.  
-- `"@monaco-editor/react": "^4.7.0"` - Integrates the Monaco editor (VS Code’s editor) into React applications.  
-- `"@types/react-window": "^1.8.8"` - Provides TypeScript support for `react-window`, a library for rendering large lists efficiently.  
+- `"@emotion/styled": "^11.11.0"` - To write CSS-in-JS styles with a styled-components-like syntax.  
+- `"@monaco-editor/react": "^4.7.0"` - To integrate the Monaco editor (VS Code’s editor) into React applications.  
+- `"@types/react-window": "^1.8.8"` - To render large data efficiently.  
 - `"framer-motion": "^10.16.5"` - Enables smooth animations and transitions in React components.  
 - `"react": "^18.2.0"` - The core React library for building UI components.  
-- `"react-dom": "^18.2.0"` - Allows React to interact with the DOM.  
-- `"react-router-dom": "^7.4.0"` - Enables client-side routing in React applications.  
+- `"react-dom": "^18.2.0"` - To interact with React's virtual DOM  
+- `"react-router-dom": "^7.4.0"` - To client-side routing in React applications.  
 - `"zustand": "^4.4.6"` - A lightweight state management library for managing application state efficiently.  
 
 
