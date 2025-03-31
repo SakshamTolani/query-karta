@@ -18,12 +18,11 @@ SQL Query Editor provides a modern, fast, and intuitive interface for data analy
 - Clean, Modern UI
 - Search Functionality
 - Responsive Design
-- Query History
 - Export Functionality
 
 ## 📊 Query Templates Library
 
-Our query editor comes with a rich set of pre-built templates:
+**Query Karta** comes with a rich set of pre-built templates:
 
 ### 🛍️ Product Analytics
 - View all products in catalog
@@ -112,38 +111,31 @@ Performance metrics were collected using:
 
 ## ⚡ Performance Optimizations
 
-We implemented several key optimizations to enhance application performance:
+Several key optimizations are implemented to enhance application performance:
 
 ### Asset Optimization
 - Converted all icons to SVG format for faster rendering and reduced file size
-- Implemented responsive image loading with proper sizing
 - Removed unused CSS through tree-shaking and purging techniques
 - Minified all static assets during build process
 
 ### Data Handling
 - Implemented `react-window` for virtualized rendering of large datasets
-- Applied data compression techniques for all API responses
-- Implemented pagination for query results exceeding threshold size
-- Used chunked data loading for improved user experience with large datasets
+- Applied data compression techniques for all json data
 
 ### UI/UX Improvements
 - Eliminated large layout shifts (CLS optimization) through proper placeholder usage
-- Implemented skeleton loaders for asynchronous content
+- Implemented loaders for asynchronous content
 - Deferred non-critical JavaScript execution
 - Applied code-splitting based on route boundaries
 
 ### Build Optimizations
 - Configured Webpack for optimal chunking and tree-shaking
-- Implemented differential loading for modern browsers
-- Applied gzip/brotli compression for deployments
-- Utilized service workers for caching static assets
+- Applied brotli compression for deployments
 
-These optimizations resulted in a 40% improvement in initial load time and significantly enhanced the user experience when working with large datasets.
 
 ### Performance Optimizations
 1. **Code Splitting**
    - Lazy loading of Monaco Editor
-   - Route-based code splitting
 
 2. **Asset Optimization**
    - Gzip compression enabled
@@ -155,8 +147,6 @@ These optimizations resulted in a 40% improvement in initial load time and signi
 
 4. **Large Dataset Handling**
    - Virtualized scrolling for large result sets
-   - Chunked data loading
-   - Debounced search operations
 
 ### Load Time Breakdown
 
@@ -187,7 +177,7 @@ Visit `http://localhost:5173` to see the application.
 ## 🎯 Usage
 
 1. Select a query template from the dropdown or write your own SQL
-2. Use Ctrl/Cmd + Enter to execute the query
+2. Hit execute query button
 3. View results in the data grid below
 4. Export results as CSV if needed
 
@@ -198,11 +188,14 @@ Visit `http://localhost:5173` to see the application.
 | Ctrl + Enter | ▶️ Execute Query |
 | Ctrl + S | 💾 Save Query |
 | Ctrl + / | 💬 Toggle Comment |
+| Alt + Shift + ↑/↓ | 📋 Duplicate Line |
 | Ctrl + Space | ✨ Trigger Autocomplete |
+| Ctrl + Z | ↶ Undo |
+| Ctrl + Y | ↷ Redo |
 
 ## 📝 Demo Queries
 
-Try these sample queries to explore different aspects of the database:
+Sample queries to explore different aspects of the database:
 
 ### 🛍️ Products Queries
 ```sql
@@ -265,24 +258,20 @@ ORDER BY OrderCount DESC;
 Configure your environment variables in `.env`:
 
 ```env
-VITE_API_ENDPOINT=your_api_endpoint
-VITE_MAX_ROWS=10000
+VITE_API_ENDPOINT=your_api_endpoint //future considerations
+VITE_MAX_ROWS=10000 //future considerations
 VITE_COMPRESSION_ENABLED=true
 ```
 
 ## 🌟 Future Enhancements
 
 - Query history with undo/redo
-- Real-time collaboration
-- Query plan visualization
-- Schema browser
-- Custom theme support
-
-## 📫 Contact
-
-Saksham Tolani Name - [@linkedin](https://linkedin.com/in/saksham-tolani)
-
-Project Link: [https://github.com/SakshamTolani/query-karta](https://github.com/SakshamTolani/query-karta)
+- Real-time collaboration with multi-users like replit
+- Tracking changes to queries with git-like history and diff visualization
+- Convert query results into charts, graphs, and dashboards
+- Interactive ER diagram of database tables with relationship mapping
+- AI Support for writing basic queries
+- Tracking who ran what queries and when with detailed execution metrics
 
 ## 🙏 Acknowledgments
 
@@ -291,7 +280,11 @@ Project Link: [https://github.com/SakshamTolani/query-karta](https://github.com/
 - [Atlan Team](https://atlan.com/) for the opportunity
 
 
-## 🌍Contact
+## 📫 Contact
+
+Saksham Tolani Name - [@linkedin](https://linkedin.com/in/saksham-tolani)
+
+Project Link: [https://github.com/SakshamTolani/query-karta](https://github.com/SakshamTolani/query-karta)
 
 For any inquiries or support, please email us at sakshamtolani@gmail.com or open an issue in this repository.
 
