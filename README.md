@@ -90,11 +90,10 @@ Here’s your list formatted for the README:
 - Potential for improvements with caching and additional fallback mechanisms
 
 
-## 📊 Performance Metrics
-
-![Performance Metrics](assets/performance-metrics.png)
 
 ## 📊 Page Load Time & Performance Metrics
+
+![Performance Metrics](assets/performance-metrics.png)
 
 Our application achieves excellent performance metrics as measured by Lighthouse and PageSpeed Insights (https://pagespeed.web.dev/):
 
