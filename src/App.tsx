@@ -53,8 +53,8 @@ function App() {
 
           <Box
             position="fixed"
-            top="4"
-            right="4"
+            top="3"
+            right={{lg: "-1", xl: '4'}}
             zIndex="1000"
             visibility={{
               base: 'hidden',

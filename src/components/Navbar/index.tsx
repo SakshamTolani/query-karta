@@ -15,7 +15,7 @@ export function Navbar() {
         maxW="container.xl"
         mx="auto"
         h="16"
-        px={{ base: 16, md: 4 }}
+        px={{ base: 4, md: 6, lg: 8 }}
         align="center"
         justify="space-between"
       >
@@ -25,7 +25,6 @@ export function Navbar() {
           bgClip="text"
           fontWeight="bold"
           letterSpacing="tight"
-          ml={{ base: 4, md: 0 }}
         >
           Query Karta - SQL Editor
         </Heading>
